@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>My NFT</title>
+</head>
+<body>
+<div id="app">
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Send Token</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/nft.html">NFT Manage</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/my_nft.html">My NFT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/nft_exchange.html">NFT Exchange</a>
+            </li>
+        </ul>
+        <div class="py-5 text-left">
+            <h2>My NFT</h2>
+        </div>
+        <div class="row">
+            <form class="row g-3" id="myNftForm">
+                <div class="mb-3 row">
+                    <div class="col-sm-2">
+                        <button class="btn btn-primary" type="submit" id="search">Search</button>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="owner" class="col-sm-2 col-form-label">Owner</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control-plaintext" id="owner" name="owner">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="contract" class="col-sm-2 col-form-label">Contract</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="contract" name="contract">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="mb-3 row">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">TokenId</th>
+                    <th scope="col">Owner</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">&nbsp;</th>
+                </tr>
+                </thead>
+                <tbody id="nftBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="transferModal" tabindex="-1" aria-labelledby="transferModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="transferModalLabel">Payment NFT</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="row g-3" id="transferForm">
+                <input type="hidden" name="contract" />
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">TokenId</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" name="tokenId">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Price</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" name="price">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Recipient</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="recipient">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Transfer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="paymentModalLabel">Payment NFT</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="row g-3" id="paymentForm">
+                <input type="hidden" name="contract" />
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">TokenId</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" name="tokenId">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Price</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" name="price">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Contract</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="recipient">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Payment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+export const CHAIN_ID = 'spunky'; // process.env.CHAIN_ID
+export const CHAIN_NAME =  'Spunky Network';
+export const TENDERMINT_RPC = 'http://localhost:26657';
+export const REST_ENDPOINT =  'http://localhost:1317';
+export const COIN_DENOM = 'SPUNK';
+export const COIN_MINIMAL_DENOM =  'uspunk';
+export const COIN_DECIMALS =  6;
+export const COIN_TYPE =  118;
+export const ADDREE_PREFIX =  'spunky';

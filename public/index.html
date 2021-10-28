@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spunk Universe</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+
+	<div id="container">
+		<div id="game-field" class="col-sm-12">
+			<canvas id="the-canvas">
+				<!-- our drawing will go here -->
+			</canvas>
+			<div id="score-wrapper" class="hiddenOnStart" hidden>
+				<div>Score: <span class="player-score"></span></div>
+			</div>
+			<div id="leader-board-wrapper" class="hiddenOnStart" hidden>
+				<div id="leader-board">
+					<h3 class="text-center">Leaderboard</h3>
+					<hr>
+					<ol class="leader-board">
+						<li class="leaderboard-player"></li>
+					</ol>
+					<hr>
+				</div>
+			</div>
+			<div id="game-message-wrapper">
+				<div id="game-message">{{gameMessage}}</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- Modals -->
+<!-- LOGIN MODAL -->
+	<div id="loginModal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-sm">
+
+		<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h2 class="modal-title text-center">Spunk Universe</h2>
+				</div>
+				<div class="modal-body">
+					<form class="name-form">
+						<div class="text-center error-message"></div>
+						<input id="name-input" class="text-input text-center form-control" type="text" name="name-input" placeholder="Enter your name here" required>
+                        <button id="login" type="submit" class="btn play-button btn-primary">Login with Keplr Wallet</button>
+					</form>
+                    <a href="/leaderboard.html" type="submit" class="btn play-button btn-danger">Leaderboard</a>
+                    <a href="/reward.html" type="submit" class="btn play-button btn-success">Rewards</a>
+                    <a href="/nft.html" type="submit" class="btn play-button btn-warning">NFT</a>
+				</div>
+				<div class="modal-footer">
+					<div id="instructions">
+						<label id="how-to-play">How to play:</label>
+						<ul>
+							<li>Move your mouse on the screen to move your character.</li>
+							<li>Absorb orbs by running over them in order to grow your character.</li>
+							<li>The larger you get the slower you are.</li>
+							<li>Objective: Absorb other players to get even larger but not lose speed.</li>
+							<li>The larger player absorbs the smaller player.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://cdn.socket.io/4.3.2/socket.io.min.js" integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs" crossorigin="anonymous"></script>
+	<script src="./scripts/ui.js"></script>
+	<script src="./scripts/canvas.js"></script>
+	<script src="./scripts/socket.js"></script>
+</body>
+</html>

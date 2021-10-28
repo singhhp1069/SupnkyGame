@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Artboard1" transform="matrix(0.454546,0,0,0.463941,154.953,4.86234e-13)">
+        <rect x="-340.896" y="0" width="110" height="107.772" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="-340.896" y="0" width="110" height="107.772"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g transform="matrix(2.2,0,0,2.15545,-340.896,-1.04805e-12)">
+                <clipPath id="_clip2">
+                    <path d="M25.098,-0.49L25.191,-0.462L25.278,-0.416L25.354,-0.354L25.416,-0.278L25.462,-0.191L25.49,-0.098L25.5,0L25.5,50L25.49,50.098L25.462,50.191L25.416,50.278L25.354,50.354L25.278,50.416L25.191,50.462L25.098,50.49L25,50.5L24.902,50.49L24.809,50.462L24.722,50.416L24.646,50.354L24.584,50.278L24.538,50.191L24.51,50.098L24.5,50L24.5,0L24.51,-0.098L24.538,-0.191L24.584,-0.278L24.646,-0.354L24.722,-0.416L24.809,-0.462L24.902,-0.49L25,-0.5L25.098,-0.49Z"/>
+                </clipPath>
+                <g clip-path="url(#_clip2)">
+                    <use xlink:href="#_Image3" x="24.5" y="0" width="1px" height="50px"/>
+                </g>
+            </g>
+            <g transform="matrix(2.2,0,0,2.15545,-340.896,-1.04805e-12)">
+                <clipPath id="_clip4">
+                    <path d="M50.098,24.51L50.191,24.538L50.278,24.584L50.354,24.646L50.416,24.722L50.462,24.809L50.49,24.902L50.5,25L50.49,25.098L50.462,25.191L50.416,25.278L50.354,25.354L50.278,25.416L50.191,25.462L50.098,25.49L50,25.5L0,25.5L-0.098,25.49L-0.191,25.462L-0.278,25.416L-0.354,25.354L-0.416,25.278L-0.462,25.191L-0.49,25.098L-0.5,25L-0.49,24.902L-0.462,24.809L-0.416,24.722L-0.354,24.646L-0.278,24.584L-0.191,24.538L-0.098,24.51L0,24.5L50,24.5L50.098,24.51Z"/>
+                </clipPath>
+                <g clip-path="url(#_clip4)">
+                    <use xlink:href="#_Image5" x="0" y="24.5" width="50px" height="1px"/>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <image id="_Image3" width="1px" height="50px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAYAAACd+7GKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAFElEQVQImWOor69PY2JgYGAYaQQABA4CRv7bc6YAAAAASUVORK5CYII="/>
+        <image id="_Image5" width="50px" height="1px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAABCAYAAACc0f2yAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAEElEQVQImWOsr69PYxgGAAB4SgHlyGyMgQAAAABJRU5ErkJggg=="/>
+    </defs>
+</svg>

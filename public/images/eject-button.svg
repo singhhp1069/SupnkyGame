@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-1906.3,-157.17)">
+        <g transform="matrix(1,0,0,1,-0.966533,-0.712675)">
+            <g id="Eject-button" serif:id="Eject button" transform="matrix(0.866579,0,0,0.866579,361.621,21.6823)">
+                <rect x="1783.61" y="157.17" width="80.777" height="80.777" style="fill:none;"/>
+                <g transform="matrix(1.06687,0,0,1.06687,-231.232,-37.8421)">
+                    <circle cx="1935.39" cy="211.273" r="13.715" style="fill:none;stroke:black;stroke-width:4.37px;"/>
+                </g>
+                <g transform="matrix(6.12323e-17,1,-0.931464,5.70357e-17,2008.61,-1768.69)">
+                    <path d="M1956.25,166.507L1956.25,209.341" style="fill:none;stroke:black;stroke-width:4.83px;"/>
+                </g>
+                <g transform="matrix(1,0,0,0.931464,-122.683,12.514)">
+                    <path d="M1956.25,166.507L1956.25,209.341" style="fill:none;stroke:black;stroke-width:4.83px;"/>
+                </g>
+                <g transform="matrix(1.16721,1.16721,-1.16721,1.16721,-231.839,-2254.73)">
+                    <path d="M1931.15,177.555L1938.68,184.005L1923.63,184.005L1931.15,177.555Z" style="fill:none;stroke:black;stroke-width:2.83px;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
